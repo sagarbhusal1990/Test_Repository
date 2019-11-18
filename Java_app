@@ -1,0 +1,40 @@
+import java.util.Scanner; // program uses class Scanner
+
+/**
+ *
+ * @author sagar
+ */
+public class BMI {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+    Scanner input = new Scanner( System.in );
+     int weight; 					
+     int height; 				
+     float BMI; 						
+
+      System.out.print( "Enter your weight in pound: " ); 	
+      weight = input.nextInt(); 			
+
+      System.out.print( "Enter your height in inches: " ); 	
+      height = input.nextInt(); 			
+
+      BMI =(float)( weight *703)/(height*height); 	
+      
+      System.out.printf( "Your BMI is %.2f\n", BMI );
+      System.out.println("BMI Standars:");
+      System.out.println("Underweight: less than 18.5");
+      System.out.println("Normal: between 18.5 and 24.9");
+      System.out.println("Overweight: between 25 and 29.9");
+      System.out.println("Obese: 30 or greater");
+      
+      
+
+        
+        
+    }
+    
+}
+
